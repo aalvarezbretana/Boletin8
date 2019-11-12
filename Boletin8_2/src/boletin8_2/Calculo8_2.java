@@ -30,7 +30,7 @@ public class Calculo8_2 {
             } else {
                 prezo_total = prezo * unidades * 0.98f;
             }
-        } else if (unidades >= 200) {
+        } else {
             if (prezo > 4000) {
                 prezo_total = prezo * unidades * 0.90f;
             } else {
@@ -40,7 +40,8 @@ public class Calculo8_2 {
         }
         System.out.println("Unidades " + unidades + ".");
         System.out.println("Prezo unidad " + prezo + "€.");
-        System.out.println("Desconto " + ((prezo * unidades) - prezo_total) + "€.");
         System.out.println("Prezo total " + prezo_total + "€.");
+        System.out.println("Desconto " + (prezo * unidades - prezo_total) + "€.");
+        
     }
 }
